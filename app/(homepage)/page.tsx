@@ -1,6 +1,8 @@
 import { Search } from "lucide-react";
 import Image from "next/image";
 import FeaturedCarCard from "./_components/FeaturedCarCard";
+import { brands } from "@/constants";
+import Brand from "./_components/Brand";
 
 export default function Home() {
   return (
@@ -62,7 +64,22 @@ export default function Home() {
           </div>
         </div>
 
+        {/* All Brand */}
+        <div className="px-60 flex flex-col gap-4 py-6">
+        <h1 className="text-2xl font-medium">All Brands</h1>
 
+            <div className="border flex flex-wrap">
+                {
+                    brands.map(brand => (
+                      <Brand 
+                      key={brand.label}
+                      label={brand.label}
+                      imgSrc={brand.imgSrc}
+                      />
+                    ))
+                }
+            </div>
+        </div>
       </div>
     </main>
   );
