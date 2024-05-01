@@ -19,7 +19,7 @@ const navLink = [
 ];
 function Navbar() {
   return (
-    <nav className="flex w-full px-24 h-14 border">
+    <nav className="sticky flex w-full px-24 h-14 border">
       {/* left side */}
       <div className="w-1/2 h-full flex justify-between items-center">
         <Image
