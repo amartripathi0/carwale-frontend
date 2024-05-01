@@ -1,9 +1,10 @@
 import { Search } from "lucide-react";
 import Image from "next/image";
+import FeaturedCarCard from "./_components/FeaturedCarCard";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <div className="h-screen w-full">
         <div className="h-3/5 w-full relative">
             <Image 
@@ -13,6 +14,7 @@ export default function Home() {
             className="h-full w-full object-cover"
             alt="homepage"
             />
+            {/* FIND THE RIGHT CAR INPUT */}
             <div className="absolute bottom-6 left-1/4 flex flex-col items-center gap-6 w-1/2 text-white">
                 <h2 className="text-3xl font-semibold">FIND THE RIGHT CAR</h2>
                   <div className="flex justify-between h-10 w-full">
@@ -34,6 +36,33 @@ export default function Home() {
                   </div>
             </div>
         </div>
+
+        {/* Featured Cars */}
+        <div className="px-60 flex flex-col gap-4 py-6">
+          <h1 className="text-2xl font-medium">Featured Cars</h1>
+          <div></div>
+
+          <div className="flex gap-4 justify-between w-full">
+
+            <FeaturedCarCard 
+                imgSrc="https://imgd.aeplcdn.com/310x174/n/cw/ec/156405/xuv-3xo-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
+                carTitle="Mahindra XUV 3XO"
+                price="7.49"
+           />
+            <FeaturedCarCard 
+                imgSrc="https://imgd.aeplcdn.com/310x174/n/cw/ec/132427/taisor-exterior-right-front-three-quarter-2.png?isig=0&q=80"
+                carTitle="Toyota Urban Cruiser Taisor"
+                price="7.74"
+           />
+            <FeaturedCarCard 
+                imgSrc="https://imgd.aeplcdn.com/310x174/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80"
+                carTitle="Maruti Fronx"
+                price="7.51"
+           />
+          </div>
+        </div>
+
+
       </div>
     </main>
   );

@@ -19,6 +19,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <div className="fixed top-1/2 z-50 right-0 bg-[#6F6F6F] text-white p-2">
+          <h4 className="font-medium text-sm">
+          Buying a New Car?
+          </h4>
+          <p className="text-xs">Ask the Experts</p>
+          <h2 className="font-medium">
+          1800 2090 230
+          </h2>
+          <p className="text-xs">(Toll free)</p>
+        </div>
         {children}
       </body>
     </html>
