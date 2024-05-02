@@ -1,5 +1,6 @@
 import React from "react";
 import CarOverview from "../_components/overview";
+import CarVariants from "../_components/CarVariants";
 
 function CarDetails() {
   return (
@@ -11,14 +12,16 @@ function CarDetails() {
       Lakh. It is available in 20 variants. Punch EV comes with 6 airbags.
       Tata Punch EV has a ground clearance of 190 mm and is available in 5
       colours. Users have reported a driving range of 378.6 Km for Punch EV."
-      minPrice={10.99}
-      maxPrice={15.49}
+        minPrice={10.99}
+        maxPrice={15.49}
       />
 
-     
-      <div>
-        <h1></h1>
-      </div>
+      <CarVariants
+        heading={"Tata Punch EV Price"}
+        sectionBio={
+          "Tata Punch EV price for the base model starts at Rs. 10.99 Lakh and the top model price goes upto Rs. 15.49 Lakh (Avg. ex-showroom). Punch EV price for 20 variants is listed below. "
+        }
+      />
     </div>
   );
 }
