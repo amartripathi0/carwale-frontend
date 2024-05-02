@@ -3,6 +3,7 @@ import Image from "next/image";
 import FeaturedCarCard from "./_components/FeaturedCarCard";
 import { brands } from "@/constants";
 import Brand from "./_components/Brand";
+import OrangeButton from "@/components/OrangeButton";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
                       <Search className="text-black"/>
                       <input type="text" placeholder="Type to select a car name, e.g MG Gloster" className="w-full h-full outline-none text-[#535F71]" />
                     </div>
-                    <button className="w-40 bg-[#E53012] border-2 border-white">Search</button>
+                    <OrangeButton label="Search"/>
                   </div>
                   <div className="flex justify-between text-xs w-full">
                       <p>e.g. MG Gloster</p>

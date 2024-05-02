@@ -1,6 +1,5 @@
 import React from "react";
 import CarOverview from "../_components/overview";
-import CarDetailsNavigation from "../_components/CarDetailsNavigation";
 
 function CarDetails() {
   return (
@@ -12,9 +11,10 @@ function CarDetails() {
       Lakh. It is available in 20 variants. Punch EV comes with 6 airbags.
       Tata Punch EV has a ground clearance of 190 mm and is available in 5
       colours. Users have reported a driving range of 378.6 Km for Punch EV."
+      minPrice={10.99}
+      maxPrice={15.49}
       />
 
-     <CarDetailsNavigation />
      
       <div>
         <h1></h1>
