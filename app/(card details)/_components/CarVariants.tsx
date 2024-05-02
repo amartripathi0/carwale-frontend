@@ -52,8 +52,9 @@ function CarVariants({
             <CarVariant key={eachCarVariant.variantName} {...eachCarVariant} />
           ))}
 
-            <Link href={"#"} className="text-blue-500 flex-center">View More Vairiants</Link> 
-
+          <Link href={"#"} className="text-blue-500 flex-center">
+            View More Vairiants
+          </Link>
         </div>
       </div>
 
