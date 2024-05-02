@@ -62,3 +62,16 @@ export const brands : BrandType[] = [
         
     },
 ]
+
+export const carDetailsNavbarItems = [
+    'overview' ,
+    "variants",
+    "offers",
+    "key specs",
+    "expert opinion",
+    "similar cars",
+    "colours",
+    "brochure",
+    "range",
+
+]
