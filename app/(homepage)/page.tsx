@@ -6,9 +6,9 @@ import Brand from "./_components/Brand";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="h-screen w-full">
-        <div className="h-3/5 w-full relative">
+    <main className="">
+      <div className="w-full">
+        <div className="h-[60vh] w-full relative">
             <Image 
             src={"https://imgd.aeplcdn.com/0x0/cw/static/landing-banners/homepage-m-2021.jpg?v=19042022"}
             height={2000}
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* Featured Cars */}
-        <div className="px-60 flex flex-col gap-4 py-6">
+        <div className="px-64 flex flex-col gap-4 py-6">
           <h1 className="text-2xl font-medium">Featured Cars</h1>
           <div></div>
 
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* All Brand */}
-        <div className="px-60 flex flex-col gap-4 py-6">
+        <div className="px-64 flex flex-col gap-4 py-6">
         <h1 className="text-2xl font-medium">All Brands</h1>
 
             <div className="border flex flex-wrap">
@@ -78,6 +78,7 @@ export default function Home() {
                       />
                     ))
                 }
+                <div className="w-full py-4 text-blue-500 flex-center">View More Brands</div>
             </div>
         </div>
       </div>
